@@ -1,5 +1,5 @@
 # Service Robot
-[![Build Status](https://travis-ci.org/htsai51/Service-Robot.svg?branch=master)](https://travis-ci.org/htsai51/Service-Robot)
+[![Build Status](https://travis-ci.org/StevieG47/Service-Robot.svg?branch=master)](https://travis-ci.org/StevieG47/Service-Robot)
 
 ## Overview
 This is an indoor service robot project which can take simple voice commands from the end user, and navigate autonomously to perform a required task. This indoor service robot is implemented in ROS Gazebo simulation environment using the TurtleBot as the base platform.
@@ -23,6 +23,7 @@ MIT open-source license, see LICENSE.TXT
 - Ubuntu 14.04
 - ROS indigo
 - TurtleBot_Gazebo
+- Rviz
 - Package Dependencies
     - roscpp
     - std_msgs
@@ -31,7 +32,25 @@ MIT open-source license, see LICENSE.TXT
     - move_base_msgs
     - pocketsphinx
     - sound_play
+    - actionlib
+    - actionlib_msgs
+    - nav_msgs
+    - nav_core
+    - base_local_planner
+    - tf
+
 
 ## Known Issues
 
 ## Developer Documentation
+
+
+## How to generate doxygen documentation
+
+- In your . directory
+
+```bash
+doxygen ./Doxygen
+```
+
+- Doxygen files will be generated to ./docs folder
